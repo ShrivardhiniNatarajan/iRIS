@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Audio Transcriber</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="box">
-
-        <h1>🎧 IRIS - Audio Transcriber & Summarizer</h1>
-        <p class="subtext">
-            Upload an audio file -> Get transcription -> Generate summary
-        </p>
-
-        <h3>Upload Audio File</h3>
-        <input type="file" id="audioFile">
-
-        <button onclick="transcribeAudio()">Transcribe Audio</button>
-
-        <h3>Transcription Output</h3>
-        <textarea id="transcription" placeholder="Transcribed text will appear here..."></textarea>
-
-        <button class="green" onclick="summarizeText()">Summarize Text</button>
-
-        <h3>Summary Output</h3>
-        <textarea id="summary" placeholder="Summary will appear here..."></textarea>
-
-    </div>
-
-    <script src="scripts.js"></script>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iris</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
